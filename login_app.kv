@@ -1,0 +1,28 @@
+<LoginPage>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        MDLabel:
+            text: 'Welcome to the\nLogin Page'
+        MDBoxLayout:
+            id: username_bl
+            orientation: 'vertical'
+            MDLabel:
+                text: 'Username'
+            MDTextField:
+                id: username
+                hint_text: 'Your username here'
+        MDBoxLayout:
+            id: password_bl
+            orientation: 'vertical'
+            MDLabel:
+                text: 'Password'
+            MDTextField:
+                id: password
+                hint_text: 'Your password here'
+        MDLabel:
+            id: login_status
+            text: ''
+        MDRectangleFlatButton:
+            text: 'Login'
+            on_release:
+                root.processLogin()
